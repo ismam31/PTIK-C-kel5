@@ -36,19 +36,19 @@ void createSepatu(vector<Sepatu> &sepatuList)
     sepatuList.push_back(newSepatu);
 }
 
-void updateSepatu(vector<Sepatu> &sepatuList)
+void updateKaos(vector<kaos> &kaosList)
 {
     int index;
-    cout << "Masukkan nomor sepatu yang ingin diupdate: ";
+    cout << "Masukkan nomor kaos yang ingin diupdate: ";
     cin >> index;
-    cout << "Masukkan merk sepatu: ";
-    cin >> sepatuList[index - 1].merk;
-    cout << "Masukkan ukuran sepatu: ";
-    cin >> sepatuList[index - 1].ukuran;
-    cout << "Masukkan warna sepatu: ";
-    cin >> sepatuList[index - 1].warna;
-    cout << "Masukkan harga sepatu: ";
-    cin >> sepatuList[index - 1].harga;
+    cout << "Masukkan merk kaos: ";
+    cin >> kaosList[index - 1].merk;
+    cout << "Masukkan ukuran kaos: ";
+    cin >> kaosList[index - 1].ukuran;
+    cout << "Masukkan warna kaos: ";
+    cin >> kaosList[index - 1].warna;
+    cout << "Masukkan harga kaos: ";
+    cin >> kaosList[index - 1].harga;
 }
 
 void deleteSepatu(vector<Sepatu> &sepatuList)
