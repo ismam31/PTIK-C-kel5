@@ -3,7 +3,7 @@
 
 using namespace std;
 
-struct Sepatu
+struct Kaos
 {
     string merk;
     string ukuran;
