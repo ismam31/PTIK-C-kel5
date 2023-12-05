@@ -3,7 +3,7 @@
 
 using namespace std;
 
-struct Sepatu
+struct Kaos
 {
     string merk;
     string ukuran;
@@ -11,29 +11,29 @@ struct Sepatu
     int harga;
 };
 
-void displaySepatu(vector<Sepatu> &sepatuList)
+void displayKaos(vector<Kaos> &KaosList)
 {
-    for (int i = 0; i < sepatuList.size(); i++)
+    for (int i = 0; i < KaosList.size(); i++)
     {
-        cout << i + 1 << ". " << sepatuList[i].merk << " ";
-        cout << sepatuList[i].ukuran << " ";
-        cout << sepatuList[i].warna << " ";
-        cout << sepatuList[i].harga << endl;
+        cout << i + 1 << ". " << KaosList[i].merk << " ";
+        cout << KaosList[i].ukuran << " ";
+        cout << KaosList[i].warna << " ";
+        cout << KaosList[i].harga << endl;
     }
 }
 
-void createSepatu(vector<Sepatu> &sepatuList)
+void createKaos(vector<Kaos> &KaosList)
 {
-    Sepatu newSepatu;
-    cout << "Masukkan merk sepatu: ";
-    cin >> newSepatu.merk;
-    cout << "Masukkan ukuran sepatu: ";
-    cin >> newSepatu.ukuran;
-    cout << "Masukkan warna sepatu: ";
-    cin >> newSepatu.warna;
-    cout << "Masukkan harga sepatu: ";
-    cin >> newSepatu.harga;
-    sepatuList.push_back(newSepatu);
+    Kaos newKaos;
+    cout << "Masukkan merk Kaos: ";
+    cin >> newKaos.merk;
+    cout << "Masukkan ukuran Kaos: ";
+    cin >> newKaos.ukuran;
+    cout << "Masukkan warna Kaos: ";
+    cin >> newKaos.warna;
+    cout << "Masukkan harga Kaos: ";
+    cin >> newKaos.harga;
+    KaosList.push_back(newKaos);
 }
 
 void updateSepatu(vector<Sepatu> &sepatuList)
